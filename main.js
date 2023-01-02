@@ -334,6 +334,14 @@ console.log("-----------substring------------")
 
 
 /*
+النقاط التي ناقشها الفيديو:
+قطع النص حسب الاحداثيات المعطاة :()SubString
+قطع النص حسب الاحداثيات المعطاة والفرق تقدر ان تعطي العناصر الذي تريد حذفها ,و الادخال في السالب:()SubStr
+
+
+*/
+
+/*
 -- subString (start[mand],End [opt] not including End)
 -- start > End will Swap
 -- start < 0 It start form 0
@@ -360,3 +368,24 @@ console.log(rr.substring(rr.length -6, rr.length -4)) // sc
 //substr muss der anfag zahl geben und end ansonsten bringt das alles 
 console.log(rr.substr(0)); // 
 console.log(rr.substr(0, 2 )); 
+
+
+/*
+التحقق اذا كانت القيمة المعطاة موجودة ام لا في النص المكتوب :()Includes
+
+ */
+console.log(rr.includes("Im")); // true
+console.log(rr.includes("Im", 4)); // false search nach im ist false
+
+/**
+ التحقق اذا كانت القيمة المعطاة موجودة ام لا في النص المكتوب وتحسب من البداية :()StartWiths
+التحقق اذا كانت القيمة المعطاة موجودة ام لا في النص المكتوب وتحسب من النهاية :()EndWiths 
+ */
+
+console.log(rr.startsWith("I")) ;// fängt mit I ----> true
+console.log(rr.startsWith("L",3)); //true
+console.log(rr.startsWith("leve",3));// true
+
+console.log(rr.endsWith("script",19)); //true
+console.log(rr.endsWith("t",19));// true
+console.log(rr.endsWith("s",19));// false
