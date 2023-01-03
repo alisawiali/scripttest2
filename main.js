@@ -389,3 +389,15 @@ console.log(rr.startsWith("leve",3));// true
 console.log(rr.endsWith("script",19)); //true
 console.log(rr.endsWith("t",19));// true
 console.log(rr.endsWith("s",19));// false
+
+
+console.log("----------------challenge-----------")
+
+let ch = "Elzero web school";
+
+console.log(ch.slice(2,6).toUpperCase());
+console.log(ch.slice(-4 ,-3).repeat(8).toUpperCase());
+console.log(ch.slice(0,6).split());
+
+console.log(ch.substr(0,6)+ch.substr(10));
+console.log(ch.slice(0,1).toLowerCase()+ch.slice(1,17).toUpperCase())
